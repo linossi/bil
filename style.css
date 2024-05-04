@@ -11,6 +11,21 @@ body {
     background-color: aliceblue;
 }
 
+#header {
+    overflow: hidden;
+    background-color: #1c1c7f;
+    padding: 20px 10px;
+    font-family: 'Teko', sans-serif;
+    width:100%;
+  
+  }
+
+  #logo {
+    font-size: xx-large;
+    color:#fff
+  }
+  
+
 .form {
     margin-bottom: 20px;
 }
