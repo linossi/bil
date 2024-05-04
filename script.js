@@ -1,3 +1,51 @@
+const spørsmålOgSvar = [
+    { spørsmål: "Bilen må ha over 5 seter?", id: "over5Seter" },
+    { spørsmål: "Bilen må være manuell?", id: "manuelGir" }
+    // Legg til flere spørsmål her
+];
+
+let svar = {};
+let nåværendeSpørsmålIndex = 0;
+const spørsmålEl = document.getElementById("spørsmål");
+const nesteBtn = document.getElementById("neste");
+
+visNesteSpørsmål();
+
+nesteBtn.addEventListener("click", () => {
+    svar[spørsmålOgSvar[nåværendeSpørsmålIndex].id] = document.getElementById(spørsmålOgSvar[nåværendeSpørsmålIndex].id).checked;
+    nåværendeSpørsmålIndex++;
+    if (nåværendeSpørsmålIndex < spørsmålOgSvar.length) {
+        visNesteSpørsmål();
+    } else {
+        visAnbefaling();
+    }
+});
+
+function visNesteSpørsmål() {
+    const nåværendeSpørsmål = spørsmålOgSvar[nåværendeSpørsmålIndex];
+    spørsmålEl.innerHTML = `<p>${nåværendeSpørsmål.spørsmål}</p>`;
+    spørsmålEl.innerHTML += `<label><input type="checkbox" id="${nåværendeSpørsmål.id}"> Ja</label><br>`;
+    spørsmålEl.innerHTML += `<label><input type="checkbox" id="${nåværendeSpørsmål.id}"> Nei</label><br>`;
+}
+
+function visAnbefaling() {
+    // Basert på brukerens svar, definere hvilken bilmodell som passer best
+    // Deretter vis anbefalingen til brukeren
+    // Dette kan gjøres ved å endre innholdet i spørsmålEl
+    // Eksempel:
+    let anbefaling = "Du bør vurdere ";
+    if (svar.over5Seter && svar.manuelGir) {
+        anbefaling += "SUV-modellen!";
+    } else if (svar.over5Seter) {
+        anbefaling += "Volvo-modellen!";
+    } else {
+        anbefaling += "En kompaktbil!";
+    }
+    spørsmålEl.innerHTML = "<h2>" + anbefaling + "</h2>";
+    // Legg til flere logikk for å gi anbefaling basert på svarene
+}
+
+
 function beregnAntallDager(hentedato, returdato) {
     var startDato = new Date(hentedato);
     var sluttDato = new Date(returdato);
