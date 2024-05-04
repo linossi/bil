@@ -16,6 +16,23 @@ body {
     font-family: 'Teko', sans-serif;
     width:100%;
   }
+  #regler {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#regler h2 {
+    color: #333;
+}
+
+#regler ul {
+    list-style-type: disc; /* Bruk disc, circle eller square for ulike listestiler */
+}
+
+#regler li {
+    margin-bottom: 10px;
+}
 
   .header p.logo {
     font-size: xx-large;
