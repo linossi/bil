@@ -6,17 +6,19 @@ function visValg() {
     let tvEl = document.querySelector("#tv");
     let resultatEl = document.querySelector("p");
 
-    // Lager en tekst der vi bygger opp en enkel liste
-    let liste = "<ul>";
+  // Lager en tekst der vi bygger opp en enkel liste
+  let liste = "";
 
-    if (bsEl.checked) { liste += "<li>Barnesete/bilsete</li>"; }
-    if (dakboksEl.checked) { liste += "<li>Tilhengerfeste/dakboks</li>"; }
-    if (wifiEl.checked) { liste += "<li>Wi-Fi-hotspot</li>"; }
-    if (tvEl.checked) { liste += "<li>TV</li>"; }
+  if (bsEl.checked) { liste += "<li>Barnesete/bilsete</li>"; }
+  if (dakboksEl.checked) { liste += "<li>Tilhengerfeste/dakboks</li>"; }
+  if (wifiEl.checked) { liste += "<li>Wi-Fi-hotspot</li>"; }
+  if (tvEl.checked) { liste += "<li>TV</li>"; }
 
-    liste += "</ul>";
-
-    resultatEl.innerHTML = "Du har valgt " + liste;
+  if (liste === "") {
+      resultatEl.innerHTML = "Du har valgt ingenting";
+  } else {
+      resultatEl.innerHTML = "Du har valgt <ul>" + liste + "</ul>";
+  }
 }
 
 // Legger til en lytter på knappen
