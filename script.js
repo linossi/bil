@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let resultatEl = document.querySelector("p");
     let knappEl = document.querySelector("#knapp");
 
-    let knappEl = document.querySelector("#knapp"); // Endret til #knapp
 
     // Legger til en lytter på knappen
     knappEl.addEventListener("click", visValg);
