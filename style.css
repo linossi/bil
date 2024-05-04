@@ -48,12 +48,13 @@ body {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 20px 40px;
     background-color: #007bff;
     color: #fff;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    font-size:larger;
 }
 
 button:hover {
