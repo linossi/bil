@@ -1,12 +1,14 @@
 /* Legg til stil for nettsiden her */
 body {
     font-family: Arial, sans-serif;
+    background-color: rgb(86, 228, 228);
 }
 
 #hoved {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
+    background-color: aliceblue;
 }
 
 .form {
