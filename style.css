@@ -11,7 +11,7 @@ body {
     background-color: aliceblue;
 }
 
-#header {
+.header {
     overflow: hidden;
     background-color: #1c1c7f;
     padding: 20px 10px;
@@ -20,7 +20,7 @@ body {
   
   }
 
-  #logo {
+  .logo {
     font-size: xx-large;
     color:#fff
   }
