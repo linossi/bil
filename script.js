@@ -18,19 +18,34 @@ function beregnPris() {
     var antallDager = beregnAntallDager(hentedato, returdato);
     var totalsum = antallDager * 500; // Standard pris per dag
 
-    if (bsEl.checked) { totalsum += 100; }
-    if (dakboksEl.checked) { totalsum += 75; }
-    if (wifiEl.checked) { totalsum += 200; }
-    if (tvEl.checked) { totalsum += 200; }
-
     var valgOgPrisEl = document.getElementById("valgOgPris");
-    valgOgPrisEl.innerHTML = "Valgte tilleggstjenester og pris for " + antallDager + " dager:<br>";
-    if (bsEl.checked) { valgOgPrisEl.innerHTML += "- Barnesete/bilsete (+100kr)<br>"; }
-    if (dakboksEl.checked) { valgOgPrisEl.innerHTML += "- Tilhengerfeste/dakboks (+75kr)<br>"; }
-    if (wifiEl.checked) { valgOgPrisEl.innerHTML += "- Wi-Fi-hotspot (+200kr)<br>"; }
-    if (tvEl.checked) { valgOgPrisEl.innerHTML += "- TV (+200kr)<br>"; }
+    var liste = "<ul>"; // Start på listen
 
+    if (bsEl.checked) { 
+        liste += "<li>Barnesete/bilsete (+100kr)</li>"; 
+        totalsum += 100; 
+    }
+    if (dakboksEl.checked) { 
+        liste += "<li>Tilhengerfeste/dakboks (+75kr)</li>"; 
+        totalsum += 75; 
+    }
+    if (wifiEl.checked) { 
+        liste += "<li>Wi-Fi-hotspot (+200kr)</li>"; 
+        totalsum += 200; 
+    }
+    if (tvEl.checked) { 
+        liste += "<li>TV (+200kr)</li>"; 
+        totalsum += 200; 
+    }
+
+    liste += "</ul>"; // Avslutt listen
+
+    valgOgPrisEl.innerHTML = "Valgte tilleggstjenester og pris for " + antallDager + " dager:<br>" + liste;
     valgOgPrisEl.innerHTML += "<strong>Totalsum: " + totalsum + "kr</strong>";
 }
+
+// Legger til en lytter på knappen
+document.querySelector("#knapp").addEventListener("click", beregnPris);
+
 
 
