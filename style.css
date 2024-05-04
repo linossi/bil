@@ -17,10 +17,9 @@ body {
     padding: 20px 10px;
     font-family: 'Teko', sans-serif;
     width:100%;
-  
   }
 
-  .logo {
+  .header p.logo {
     font-size: xx-large;
     color:#fff
   }
