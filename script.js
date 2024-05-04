@@ -1,17 +1,17 @@
 // Definerer funksjonen visValg
 function visValg() {
-    let kinoEl = document.querySelector("#kino");
-    let dvdEl = document.querySelector("#dvd");
-    let strommetjenesteEl = document.querySelector("#strommetjeneste");
+    let bsEl = document.querySelector("#bs");
+    let dakboksEl = document.querySelector("#dakboks");
+    let wifiEl = document.querySelector("#wifi");
     let tvEl = document.querySelector("#tv");
     let resultatEl = document.querySelector("p");
 
     // Lager en tekst der vi bygger opp en enkel liste
     let liste = "<ul>";
 
-    if (kinoEl.checked) { liste += "<li>Kino</li>"; }
-    if (dvdEl.checked) { liste += "<li>DVD</li>"; }
-    if (strommetjenesteEl.checked) { liste += "<li>Strømmetjeneste</li>"; }
+    if (bsEl.checked) { liste += "<li>Barnesete/bilsete</li>"; }
+    if (dakboksEl.checked) { liste += "<li>Tilhengerfeste/dakboks</li>"; }
+    if (wifiEl.checked) { liste += "<li>Wi-Fi-hotspot</li>"; }
     if (tvEl.checked) { liste += "<li>TV</li>"; }
 
     liste += "</ul>";
