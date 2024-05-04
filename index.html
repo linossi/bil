@@ -29,10 +29,6 @@
             Vi takker for at du valgte Bilutleie.no for dine reisebehov. Vi ser frem til å hjelpe deg med en trygg og komfortabel reiseopplevelse!</p>
     </div>
 
-
-    
-
-      
         <div class="form">
             <h2>Velg tilleggstjenester:</h2>
             <label>
@@ -47,15 +43,17 @@
             <label>
                 <input type="checkbox" value="TV" id="tv"> TV (+200kr)
             </label>
+
+            <div class="form">
+                <h2>Velg hentedato og returdato:</h2>
+                <label for="hentedato">Hentedato:</label>
+                <input type="date" id="hentedato">
+                <label for="returdato">Returdato:</label>
+                <input type="date" id="returdato">
+            </div>
         </div>
       
-        <div class="form">
-            <h2>Velg hentedato og returdato:</h2>
-            <label for="hentedato">Hentedato:</label>
-            <input type="date" id="hentedato">
-            <label for="returdato">Returdato:</label>
-            <input type="date" id="returdato">
-        </div>
+        
       
         <button onclick="beregnPris()" id="knapp">Beregn pris</button>
       
