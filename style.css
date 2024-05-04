@@ -17,6 +17,8 @@ body {
     background-color: #000000;
     font-family: 'Teko', sans-serif;
     width:100%;
+    overflow: hidden;
+    padding: 20px 10px;
   }
 
 #regler h2 {
