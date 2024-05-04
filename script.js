@@ -20,6 +20,6 @@ function visValg() {
 }
 
 // Legger til en lytter på knappen
-let knappEl = document.querySelector("#knapp");
+let knapp = document.querySelector("#knapp");
 knappEl.addEventListener("click", visValg);
 
