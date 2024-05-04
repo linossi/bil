@@ -6,18 +6,23 @@ document.addEventListener("DOMContentLoaded", function() {
     let resultatEl = document.querySelector("p");
     let knappEl = document.querySelector("#knapp");
 
+    let knappEl = document.querySelector("#knapp"); // Endret til #knapp
+
+    // Legger til en lytter på knappen
     knappEl.addEventListener("click", visValg);
-
+    
+    // Funksjon som finner ut hvilke avkrysningsbokser som er valgt
     function visValg() {
-        let liste = "<ul>";
-
+      // Lager en tekst der vi bygger opp en enkel liste
+      liste = "<ul>";
+    
         if (kinoEl.checked) { liste += "<li>Kino</li>"; }
         if (dvdEl.checked) { liste += "<li>DVD</li>"; }
         if (strommetjenesteEl.checked) { liste += "<li>Strømmetjeneste</li>"; }
         if (tvEl.checked) { liste += "<li>TV</li>"; }
-
-        liste += "</ul>";
-
-        resultatEl.innerHTML = "Du har valgt " + liste;
+    
+      liste += "</ul>";
+    
+      resultatEl.innerHTML = "Du har valgt " + liste;
     }
 });
