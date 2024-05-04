@@ -9,6 +9,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     background-color: aliceblue;
+    border-radius: 5px;
 }
 
 .header {
@@ -16,14 +17,9 @@ body {
     font-family: 'Teko', sans-serif;
     width:100%;
   }
-  #regler {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-}
 
 #regler h2 {
-    color: #333;
+    color: #000000;
 }
 
 #regler ul {
