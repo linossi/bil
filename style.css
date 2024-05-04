@@ -1,20 +1,20 @@
 /* Legg til stil for nettsiden her */
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(86, 228, 228);
+    background-color: rgb(26, 81, 81);
 }
 
 #hoved {
     width:100%;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgb(231, 67, 185);
+    background-color: rgb(253, 255, 255);
     border-radius: 5px;
     font-family: Arial, sans-serif;
 }
 
 .header {
-    background-color: #1bc9a3;
+    background-color: #000000;
     font-family: 'Teko', sans-serif;
     width:100%;
   }
@@ -39,9 +39,10 @@ body {
 
 .form {
     margin-bottom: 20px;
-    background-color: #f9f9f9;
+    background-color:rgb(105, 155, 155);
     padding: 20px;
     border-radius: 5px;
+    color:rgb(255, 255, 255)
 }
 
 button {
