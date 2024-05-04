@@ -1,17 +1,32 @@
-body { 
-    background-color: #8ed1ae;
-    font-family: Georgia, serif;
-  }
-  #hoved {
-    width: 60%;                 
-    margin: 50px auto;         
-    padding: 40px;	            
-    background-color: white; 	 
-    border: 1px solid #cccccc;
-  }
-  h1, h2, h3 {
+/* Legg til stil for nettsiden her */
+body {
     font-family: Arial, sans-serif;
-  }
-  .checkboxradio > label {
-    display: block;
-  }
+}
+
+#hoved {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
