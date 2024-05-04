@@ -28,10 +28,6 @@ function visNesteSpørsmål() {
 }
 
 function visAnbefaling() {
-    // Basert på brukerens svar, definere hvilken bilmodell som passer best
-    // Deretter vis anbefalingen til brukeren
-    // Dette kan gjøres ved å endre innholdet i spørsmålEl
-    // Eksempel:
     let anbefaling = "Du bør vurdere ";
     if (svar.over5Seter && svar.manuelGir) {
         anbefaling += "SUV-modellen!";
@@ -41,9 +37,7 @@ function visAnbefaling() {
         anbefaling += "En kompaktbil!";
     }
     spørsmålEl.innerHTML = "<h2>" + anbefaling + "</h2>";
-    // Legg til flere logikk for å gi anbefaling basert på svarene
 }
-
 
 function beregnAntallDager(hentedato, returdato) {
     var startDato = new Date(hentedato);
