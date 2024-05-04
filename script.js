@@ -1,7 +1,6 @@
 const spørsmålOgSvar = [
-    { spørsmål: "Bilen må ha over 5 seter?", id: "over5Seter" },
-    { spørsmål: "Bilen må være manuell?", id: "manuelGir" }
-    // Legg til flere spørsmål her
+    { spørsmål: "Behøver du flere enn 5 seter?", id: "over5Seter" },
+    { spørsmål: "Ønsker du manuelt gir?", id: "manuelGir" }
 ];
 
 let svar = {};
