@@ -39,6 +39,12 @@ function visAnbefaling() {
     spørsmålEl.innerHTML = "<h2>" + anbefaling + "</h2>";
 }
 
+const bilPriser = {
+    SUV: 1000,
+    Volvo: 800,
+    Kompaktbil: 600
+};
+
 function beregnAntallDager(hentedato, returdato) {
     var startDato = new Date(hentedato);
     var sluttDato = new Date(returdato);
@@ -55,9 +61,15 @@ function beregnPris() {
     var dakboksEl = document.querySelector("#dakboks");
     var wifiEl = document.querySelector("#wifi");
     var tvEl = document.querySelector("#tv");
+    
+    // Legg til en variabel for å lagre bilmodellen som brukeren har valgt
+    var valgtBilmodell = document.getElementById("bilmodell").value;
+    // Hent prisen per dag for den valgte bilmodellen
+    var prisPerDag = bilPriser[valgtBilmodell];
 
     var antallDager = beregnAntallDager(hentedato, returdato);
-    var totalsum = antallDager * 500; // Standard pris per dag
+    // Beregn totalsummen ved å multiplisere antall dager med prisen per dag
+    var totalsum = antallDager * prisPerDag;
 
     var valgOgPrisEl = document.getElementById("valgOgPris");
     var liste = "<ul>"; // Start på listen
@@ -84,6 +96,7 @@ function beregnPris() {
     valgOgPrisEl.innerHTML = "Valgte tilleggstjenester og pris for " + antallDager + " dager:<br>" + liste;
     valgOgPrisEl.innerHTML += "<strong>Totalsum: " + totalsum + "kr</strong>";
 }
+
 
 // Legger til en lytter på knappen
 document.querySelector("#knapp").addEventListener("click", beregnPris);
