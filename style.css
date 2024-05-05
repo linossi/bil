@@ -40,10 +40,10 @@ body {
   
   .straight-line {
     border: none; 
-    border-top: 20px solid rgb(26, 81, 81);
+    border-top: 1px solid rgb(26, 81, 81);
     margin: 10px 0; 
     width: 100%; 
-    height: 2px;
+    height: 20px;
   }
 
 .form {
