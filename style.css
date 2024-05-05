@@ -38,11 +38,6 @@ body {
     color:#fff
   }
 
-  .regi {
-    color:#ffffff;
-    text-align: center;
-    font-size: 40px;
-  }
 
 .form {
     margin-bottom: 20px;
@@ -73,3 +68,13 @@ p {
     font-weight: bold;
 }
 
+.hoved-registrering {
+    background-color:#fff;
+
+}
+
+.hoved-registrering h1.regi {
+    color:#000000;
+    text-align: center;
+    font-size: 40px;
+  }
