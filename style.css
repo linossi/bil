@@ -16,7 +16,7 @@ body {
     font-family: 'Teko', sans-serif;
     width:100%;
     overflow: hidden;
-    padding: 10px 5px;
+    padding: 5px 5px;
     font-size:xx-large;
     text-align: center;
   }
@@ -34,7 +34,7 @@ body {
 }
 
   .header p.logo {
-    font-size:69px;
+    font-size:59px;
     color:#fff
   }
   
