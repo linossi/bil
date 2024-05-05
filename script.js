@@ -90,7 +90,7 @@ function beregnPris() {
 
     liste += "</ul>"; // Avslutt listen
 
-    valgOgPrisEl.innerHTML = "Valgte tilleggstjenester og pris for " + antallDager + " dager:<br>" + liste;
+    valgOgPrisEl.innerHTML = "Valgte tilleggstjenester og pris for " + antallDager + " dager med " + valgtBilmodell + ":<br>" + liste;
     valgOgPrisEl.innerHTML += "<strong>Totalsum: " + totalsum + "kr</strong>";
 }
 
