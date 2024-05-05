@@ -10,7 +10,6 @@ body {
     background-color: rgb(253, 255, 255);
     font-family: Arial, sans-serif;
     border-radius: 5px;
-    margin: 50px auto; 
     padding: 20px; 
 }
 
@@ -18,7 +17,6 @@ body {
     font-family: 'Teko', sans-serif;
     width:100%;
     overflow: hidden;
-    padding: 5px 0px;
     font-size:xx-large;
     text-align: center;
   }
