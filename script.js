@@ -61,10 +61,7 @@ function beregnPris() {
     var dakboksEl = document.querySelector("#dakboks");
     var wifiEl = document.querySelector("#wifi");
     var tvEl = document.querySelector("#tv");
-    
-    // Legg til en variabel for å lagre bilmodellen som brukeren har valgt
     var valgtBilmodell = document.getElementById("bilmodell").value;
-    // Hent prisen per dag for den valgte bilmodellen
     var prisPerDag = bilPriser[valgtBilmodell];
 
     var antallDager = beregnAntallDager(hentedato, returdato);
