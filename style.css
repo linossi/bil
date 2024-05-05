@@ -6,11 +6,12 @@ body {
 
 #hoved {
     width:100%;
-    margin: 0 auto;
     padding: 20px;
     background-color: rgb(253, 255, 255);
     font-family: Arial, sans-serif;
     border-radius: 5px;
+    margin: 50px auto; 
+    padding: 20px; 
 }
 
 .header {
