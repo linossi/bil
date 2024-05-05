@@ -42,8 +42,8 @@ function visAnbefaling() {
 const bilPriser = {
     SUV: 1000,
     Volvo: 800,
-    Kompaktbil: 600
-};
+    Kompaktbil: 600;
+}
 
 function beregnAntallDager(hentedato, returdato) {
     var startDato = new Date(hentedato);
