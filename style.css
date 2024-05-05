@@ -38,6 +38,12 @@ body {
     color:#fff
   }
   
+  .straight-line {
+    border: none; /* Remove the default border */
+    border-top: 1px solid #000; /* Set the border to be a 1-pixel solid line */
+    margin: 10px 0; /* Adjust margin to control the space above and below the line */
+    width: 100%; /* Set the width to 100% to make it span the container */
+    height: 2px;
 
 .form {
     margin-bottom: 20px;
