@@ -90,9 +90,20 @@ function beregnPris() {
 
     liste += "</ul>"; // Avslutt listen
 
-    valgOgPrisEl.innerHTML = "Valgte tilleggstjenester og pris for " + antallDager + " dager med " + valgtBilmodell + ":<br>" + liste;
-    valgOgPrisEl.innerHTML += "<strong>Totalsum: " + totalsum + "kr</strong>";
+    // Opprett en kvitteringsboks
+    var kvittering = "<div id='kvittering'>";
+    kvittering += "<h2>Din bestilling:</h2>";
+    kvittering += "<p>Antall dager: " + antallDager + "</p>";
+    kvittering += "<p>Bilmodell: " + valgtBilmodell + "</p>";
+    kvittering += "<p>Tilleggstjenester:</p>";
+    kvittering += liste;
+    kvittering += "<p><strong>Totalsum: " + totalsum + "kr</strong></p>";
+    kvittering += "</div>";
+
+    // Sett inn kvitteringsboksen i HTML-dokumentet
+    valgOgPrisEl.innerHTML = kvittering;
 }
+
 
 
 // Legger til en lytter på knappen
