@@ -90,19 +90,28 @@ function beregnPris() {
 
     liste += "</ul>"; // Avslutt listen
 
+    // Hent navn og e-post fra skjemaet
+    var fornavn = document.getElementById('fornavn').value;
+    var etternavn = document.getElementById('etternavn').value;
+    var epost = document.getElementById('epost').value;
+
     // Opprett en kvitteringsboks
     var kvittering = "<div id='kvittering'>";
     kvittering += "<h2>Din bestilling:</h2>";
+    kvittering += "<p>Navn: " + fornavn + " " + etternavn + "</p>";
+    kvittering += "<p>E-post: " + epost + "</p>";
     kvittering += "<p>Antall dager: " + antallDager + "</p>";
     kvittering += "<p>Bilmodell: " + valgtBilmodell + "</p>";
     kvittering += "<p>Tilleggstjenester:</p>";
     kvittering += liste;
     kvittering += "<p><strong>Totalsum: " + totalsum + "kr</strong></p>";
+    kvittering += "<p>Kvittering blir sendt til din e-postadresse. Vennligst sjekk innboksen din.</p>";
     kvittering += "</div>";
 
     // Sett inn kvitteringsboksen i HTML-dokumentet
     valgOgPrisEl.innerHTML = kvittering;
 }
+
 
 
 
