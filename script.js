@@ -116,6 +116,10 @@ document.getElementById('registreringsskjema').addEventListener('submit', functi
     
     // Her kan du legge til koden for å sende dataene til en backend for registrering
     
-    document.getElementById('melding').innerHTML = '<p class="suksess">Du er registrert!</p>';
+    // Vis velkomstmelding med brukerens informasjon
+    var velkomstmelding = '<p class="suksess">Velkommen, ' + fornavn + ' ' + etternavn + '!<br>';
+    velkomstmelding += 'Du er registrert med e-postadressen: ' + epost + '</p>';
+    document.getElementById('melding').innerHTML = velkomstmelding;
+    
     // Her kan du eventuelt videresende brukeren til en innloggingsside eller annen side
 });
