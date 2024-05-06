@@ -32,6 +32,36 @@
 
             <hr class="straight-line">
 
+            <div class="hoved-registrering">
+                <div class="container">
+                    <h1>Registreringsskjema</h1>
+                    <form id="registreringsskjema">
+                        <label for="fornavn">Fornavn:</label>
+                        <input type="text" id="fornavn" name="fornavn" required>
+                        
+                        <label for="etternavn">Etternavn:</label>
+                        <input type="text" id="etternavn" name="etternavn" required>
+                        
+                        <label for="postnummer">Postnummer:</label>
+                        <input type="text" id="postnummer" name="postnummer" required>
+                        
+                        <label for="epost">E-postadresse:</label>
+                        <input type="email" id="epost" name="epost" required>
+                        
+                        <label for="passord">Passord:</label>
+                        <input type="password" id="passord" name="passord" required>
+                        
+                        <label for="bekreftPassord">Bekreft passord:</label>
+                        <input type="password" id="bekreftPassord" name="bekreftPassord" required>
+                        
+                        <input type="submit" value="Registrer">
+                    </form>
+                    <div id="melding" class="suksess"></div>
+                </div>
+            </div>
+
+            <hr class="straight-line">
+
             <h2>Spørreundersøkelse: Hvilken bil passer best for deg?</h2>
     
             <div id="spørsmål"></div>
@@ -73,36 +103,6 @@
             <button onclick="beregnPris()" id="knapp">Beregn pris</button>
             <p id="valgOgPris"></p>
           </div>
-        </div>
-
-        <div class="hoved-registrering">
-            <div class="container">
-                <h1>Registreringsskjema</h1>
-                <form id="registreringsskjema">
-                    <label for="fornavn">Fornavn:</label>
-                    <input type="text" id="fornavn" name="fornavn" required>
-                    
-                    <label for="etternavn">Etternavn:</label>
-                    <input type="text" id="etternavn" name="etternavn" required>
-                    
-                    <label for="postnummer">Postnummer:</label>
-                    <input type="text" id="postnummer" name="postnummer" required>
-                    
-                    <label for="epost">E-postadresse:</label>
-                    <input type="email" id="epost" name="epost" required>
-                    
-                    <label for="passord">Passord:</label>
-                    <input type="password" id="passord" name="passord" required>
-                    
-                    <label for="bekreftPassord">Bekreft passord:</label>
-                    <input type="password" id="bekreftPassord" name="bekreftPassord" required>
-                    
-                    <input type="submit" value="Registrer">
-                </form>
-                <div id="melding" class="suksess"></div>
-            </div>
-        
-
         </div>
     </div>
        <script src="script.js"></script>
